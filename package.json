@@ -34,7 +34,7 @@
     "jest:coverage": "jest --coverage",
     "jest:watch": "jest --watch",
     "danger": "danger ci",
-    "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
+    "prettier": "prettier --config .prettierrc --write \"**/*.js\" \"**/*.mdx\"",
     "submodules:reset": "git checkout origin/main backpack-android backpack-ios backpack-react-native && git submodule update --init --recursive",
     "submodules:pull": "git submodule foreach git pull origin main",
     "submodules:update": "npm run submodules:unlock && npm run submodules:pull && git add backpack-android backpack-ios backpack-react-native && git commit -m\"[skip ci] Update submodules\" && npm run submodules:lock",
